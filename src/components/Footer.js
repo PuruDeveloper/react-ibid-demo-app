@@ -4,6 +4,11 @@ import '../styles/Footer.css'
 function Footer() {
     return (
         <div className="footer" >
+            <div className="footer__top__top" >
+                <h5>Browse through our products library!</h5>
+                <input placeholder="Search products.." type="text" ></input>
+                    <button className="footer__top__top__button" ><i class="fas fa-search"></i></button>
+            </div>
             <div className="footer__top" >
             <div className="footer__top__column__1" >
                 <img src="https://ibid.modeltheme.com/automotive/wp-content/uploads/2019/10/logo-ibid-automotive.png" alt="ibid logo" />

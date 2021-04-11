@@ -31,12 +31,12 @@
   align-items: center;
 }
 
-.home__latest__auctions {
+/* .home__latest__auctions {
   text-align: center;
   font-size: 2em;
   color: rgb(73, 73, 230);
   border-bottom: 2px solid rgb(203, 191, 191);
-}
+} */
 
 .view__auctions__button:hover {
   background: #ee964b;
@@ -60,6 +60,94 @@
   transition: all 0.5s ease-in;
 }
 
+.need__help {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.need__help img {
+  max-width: 650px;
+}
+
+.need__help__form {
+  background-color: rgb(248, 244, 244);
+  box-shadow: 2px 2px 2px 2px rgb(238, 219, 219);
+  flex: 1 1 40%;
+  text-align: center;
+  justify-content: center;
+}
+.need__help__form__ {
+  display: flex;
+  padding: 40px 40px 40px 40px;
+}
+
+.need__help__form__1,
+.need__help__form__2 {
+  display: block;
+}
+
+label {
+  padding: 30px;
+}
+
+input {
+  background-color: rgb(248, 244, 244);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(206, 196, 196);
+  margin: 20px;
+}
+textarea {
+  outline: none;
+  border-bottom: 2px solid rgb(206, 196, 196);
+  height: 50px;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+.need__help__form button {
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 1em;
+  margin-top: 40px;
+  padding: 10px;
+  height: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.need__help__form button:hover {
+  background: #ee964b;
+  transition: all 0.3s ease-in-out;
+}
+
+.home__bottom {
+  background-color: rgb(250, 245, 245);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home h5 {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(206, 196, 196);
+  font-size: 2em;
+}
+
+.home__bottom__brands {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 @media (min-width: 1050px) {
   .home__heading {
     top: 20em;
@@ -144,6 +232,10 @@
   .home__auction__cars img {
     width: 400px;
   }
+
+  /* .home__bottom__brands > * {
+    flex: 1 1 10%;
+  } */
 }
 @media (min-width: 800px) {
   .home__auction__cars img {
@@ -205,5 +297,20 @@
 
   .home__heading__3 {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 917px) {
+  .home__bottom__brands__3,
+  .home__bottom__brands__4,
+  .home__bottom__brands__5 {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@media (max-width: 618px) {
+  .home__bottom__brands__2 {
+    position: absolute;
+    visibility: hidden;
   }
 }

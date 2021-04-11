@@ -29,11 +29,7 @@ function Auctions() {
                 <p> / </p>
                 <p>Shop</p>
             </div>
-            <div className="auctions__bottom" >
-                <h5>Browse through our products library!</h5>
-                <input placeholder="Search products.." type="text" ></input>
-                    <button className="auctions__bottom__button" ><i class="fas fa-search"></i></button>
-            </div>
+            
         </div>
     )
 }
