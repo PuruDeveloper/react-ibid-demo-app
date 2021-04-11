@@ -45,18 +45,19 @@
 
 .home__auction__cars {
   text-align: center;
+  justify-content: center;
   height: 100%;
 }
 
 .home__auction__cars img {
   width: 100%;
+  margin: 3em 2px;
   border-radius: 20px;
 }
 
 .home__auction__cars img:hover {
-  transform: scale(1.2);
-
-  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
 }
 
 @media (min-width: 1050px) {
@@ -180,7 +181,7 @@
 
 @media (min-width: 1250px) {
   .home__auction__cars img {
-    width: 400px;
+    width: 350px;
   }
 }
 
