@@ -1,0 +1,151 @@
+.header__top {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-bottom: 2px solid #bbb;
+}
+
+.header__top__left__dropdowns {
+  display: flex;
+}
+
+.header__top__left {
+  display: block;
+  margin-left: 4em;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.header__top__right {
+  display: flex;
+  justify-content: center;
+}
+
+.header__top i {
+  position: relative;
+  top: 1.3em;
+  cursor: pointer;
+}
+
+.header__center img {
+  margin-top: 2em;
+  width: 90px;
+  height: 40px;
+}
+
+.header__center {
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+.header__center__center {
+  display: flex;
+  margin: 0 2px;
+  padding: 0 2px;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.header__center__center input {
+  border: none;
+  outline: none;
+  padding: 0.7em;
+  flex: 50%;
+  border-radius: 10px;
+}
+
+.header__center__center__button {
+  background-color: black;
+  position: relative;
+  margin-right: 0.3em;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  border-radius: 20px;
+}
+
+/* Search Icon css */
+.fa-search {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 900px) {
+  .header__top__left {
+    display: flex;
+  }
+  .header__center img {
+    margin-left: 5.7em;
+    margin-top: 0;
+  }
+  .header__center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header__center__center {
+    display: flex;
+    flex: 1 1 50%;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 50px;
+  }
+
+  .header__center__center p {
+    margin-left: 10px;
+  }
+
+  .header__center__center .fa-angle-down {
+    position: relative;
+    top: 0.2em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    cursor: pointer;
+  }
+
+  .header__center__right {
+    margin-right: 5em;
+  }
+
+  .header__center__right__cart {
+    display: flex;
+  }
+
+  .header__center__right__cart p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__center__right__cart i {
+    position: relative;
+    top: 0.4em;
+    margin-left: 0.4em;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 500px) {
+  .header__top {
+    display: flex;
+  }
+}

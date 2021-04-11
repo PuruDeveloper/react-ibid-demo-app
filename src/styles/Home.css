@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+}
+
+.home__heading {
+  background-image: url("../images/home__car__image.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 700px;
+}
+
+.home__heading__1 {
+  font-weight: 600;
+}
+.home__heading__2 {
+  font-weight: 900;
+}
+.home__heading__3 {
+  font-weight: 300;
+  color: #ee964b;
+}
+.view__auctions__button {
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__latest__auctions {
+  text-align: center;
+  font-size: 2em;
+  color: rgb(73, 73, 230);
+  border-bottom: 2px solid rgb(203, 191, 191);
+}
+
+.view__auctions__button:hover {
+  background: #ee964b;
+  transition: all 0.3s ease-in-out;
+}
+
+.home__auction__cars {
+  text-align: center;
+  height: 100%;
+}
+
+.home__auction__cars img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.home__auction__cars img:hover {
+  transform: scale(1.2);
+
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1050px) {
+  .home__heading {
+    top: 20em;
+    left: 10em;
+  }
+  .home__heading__1 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  .home__heading__2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .home__heading__3 {
+    font-size: 1.2rem;
+    width: 500px;
+  }
+}
+
+@media (min-width: 625px) {
+  .home__heading {
+    padding: 10px;
+    background-image: url("../images/home__car__image.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 700px;
+  }
+
+  .home__heading__1 {
+    margin: 0;
+  }
+
+  .home__auction__cars img {
+    width: 300px;
+  }
+
+  .home__auction__cars {
+    columns: 2;
+    margin: 0em auto;
+  }
+}
+
+@media (min-width: 650px) {
+  .home__heading {
+    padding: 40px;
+    background-image: url("../images/home__car__image.jpg");
+    background-size: contain;
+    background-size: 700px;
+  }
+  .home__auction__cars img {
+    width: 350px;
+  }
+}
+
+@media (min-width: 780px) {
+  .home__heading {
+    padding: 50px;
+    background-image: url("../images/home__car__image.jpg");
+    background-size: contain;
+  }
+
+  .home__heading__1 {
+    margin: 0;
+  }
+  .home__auction__cars img {
+    width: 380px;
+  }
+}
+
+@media (min-width: 800px) {
+  .home__heading {
+    padding: 80px;
+    background-image: url("../images/home__car__image.jpg");
+    background-size: contain;
+  }
+
+  .home__heading__1 {
+    margin: 0;
+  }
+  .home__auction__cars img {
+    width: 400px;
+  }
+}
+@media (min-width: 800px) {
+  .home__auction__cars img {
+    width: 420px;
+  }
+}
+@media (min-width: 917px) {
+  .home__heading {
+    padding: 100px;
+    background-size: cover;
+  }
+  .home__auction__cars img {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1061px) {
+  .home__heading {
+    padding: 140px;
+  }
+  .home__auction__cars {
+    display: flex;
+    columns: 4;
+  }
+  .home__auction__cars img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home__auction__cars img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .home__auction__cars img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 600px) {
+  .home__heading {
+    top: 25em;
+    left: 3em;
+  }
+  .home__heading {
+    background-image: url("../images/home__car__image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .home__heading__1 {
+    font-size: 2rem;
+  }
+
+  .home__heading__2 {
+    font-size: 1.3rem;
+  }
+
+  .home__heading__3 {
+    font-size: 1.1rem;
+  }
+}

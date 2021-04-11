@@ -1,0 +1,132 @@
+.footer {
+  background-color: #fff;
+  bottom: 0;
+}
+
+.footer__top {
+  margin-top: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.footer__top__column__1,
+.footer__top__column__2,
+.footer__top__column__3,
+.footer__top__column__4 {
+  flex: 1 1 25%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+.footer__top img {
+  width: 90px;
+  height: 40px;
+}
+
+.footer__heading {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.footer__social__media {
+  display: flex;
+  padding: 0;
+  margin-left: 0;
+  justify-content: space-between;
+}
+
+.footer__social__media i {
+  font-size: 1.3em;
+  color: #ee964b;
+  cursor: pointer;
+}
+
+.footer__useful__links {
+  display: flex;
+  justify-content: center;
+  color: gray;
+}
+
+.footer__useful__links i {
+  cursor: pointer;
+  position: relative;
+  top: 1.3em;
+  margin-right: 0.5em;
+  color: gray;
+}
+
+.footer__bottom {
+  border-top: 3px solid #bbb;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.footer__top__input {
+  box-shadow: 2px 2px 2px 4px #bbb;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.footer__top__input input {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer__submit__button {
+  background-color: white;
+  font-weight: 700;
+  padding: 10px;
+  padding-right: 25px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.footer__submit__button:hover {
+  background-color: #ee964b;
+}
+
+@media (min-width: 1100px) {
+  .footer__top__column__1,
+  .footer__top__column__2,
+  .footer__top__column__3,
+  .footer__top__column__4 {
+    flex: 1 1 25%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 967px) {
+  .footer__top__column__1,
+  .footer__top__column__2,
+  .footer__top__column__3,
+  .footer__top__column__4 {
+    flex: 1 1 200px;
+  }
+}
+
+@media (min-width: 722px) {
+  .footer__top__column__1,
+  .footer__top__column__2,
+  .footer__top__column__3,
+  .footer__top__column__4 {
+    flex: 1 1 10%;
+  }
+}
+
+@media (min-width: 600px) {
+  .footer__top__column__1,
+  .footer__top__column__2,
+  .footer__top__column__3,
+  .footer__top__column__4 {
+    flex: 1 1 150px;
+  }
+}
