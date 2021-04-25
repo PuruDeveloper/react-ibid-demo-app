@@ -1,18 +1,30 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import DropdownList from './DropdownList'
 import '../styles/Navbar.css'
 
+
 function Navbar() {
+    const [homeDropdownList, setHomeDropdownList ] = useState(["Art Auctions","Antiques & Collectibles","Automotive Auctions","Books & Comics","Cattle Auctions","Memorabilia Auctions","Militaria Auctions","Freelancer Mode","Coins Auctions","Electronics Auctions","Fundraising Auctions","Machinery Auctions","Domain Auctions","Laboratory Auctions","Organic Food","Self Storage Auctions","Real Estate Auctions","Shop (No Auctions)","Countdown Auctions","List Auctions","Fashion Shop","Handmade Auctions","Tours Vacantions"])
+
+    const [auctionDropdownList, setAuctionDropdownList ] = useState([""])
+
     const [home, setHome] = useState(false);
+
     const [auctions, setAuctions] = useState(false);
+
     const onHomeChange = (e) => {
         e.preventDefault()
         setHome(!home)
+        setAuctions(false)
     }
+
     const onAuctionsChange = (e) => {
         e.preventDefault()
         setAuctions(!auctions)
+        setHome(false)
     }
+
     return (
                 <div className="navbar" >
                     <div className="navbar__categories__menu" >
@@ -28,29 +40,13 @@ function Navbar() {
                             <button className="navbar__home__dropdown__button" onClick={onHomeChange} ><i className="fas fa-angle-down" ></i></button>
                             </li>
                             <div className={home ? "navbar__home__dropdown active" : "navbar__home__dropdown"} >
-                                <p><a href="#" >Art Auctions</a></p>
-                                <p><a href="#" >Antiques & Collectibles</a></p>
-                                <p><a href="#" >Automotive Auctions</a></p>
-                                <p><a href="#" >Books & Comics</a></p>
-                                <p><a href="#" >Cattle Auctions</a></p>
-                                <p><a href="#" >Memorabilia Auctions</a></p>
-                                <p><a href="#" >Militaria Auctions</a></p>
-                                <p><a href="#" >Freelancer Mode</a></p>
-                                <p><a href="#" >Coins Auctions</a></p>
-                                <p><a href="#" >Electronics Auctions</a></p>
-                                <p><a href="#" >Fundraising Auctions</a></p>
-                                <p><a href="#" >Machinery Auctions</a></p>
-                                <p><a href="#" >Domain Auctions</a></p>
-                                <p><a href="#" >Laboratory Auctions</a></p>
-                                <p><a href="#" >Organic Food</a></p>
-                                <p><a href="#" >Self Storage Auctions</a></p>
-                                <p><a href="#" >Real Estate Auctions</a></p>
-                                <p><a href="#" >Shop (No Auctions)</a></p>
-                                <p><a href="#" >Countdown Auctions</a></p>
-                                <p><a href="#" >List Auctions</a></p>
-                                <p><a href="#" >Fashion Shop</a></p>
-                                <p><a href="#" >Handmade Auctions</a></p>
-                                <p><a href="#" >Tours Vacantions</a></p>
+                                
+                                    {
+                                        homeDropdownList.map(list => {
+                                            return (<DropdownList listElement={list} />)
+                                        })
+                                    }
+                                
                             </div>
                             <li className="navbar__item">
                                 <Link to="/auctions" className="navbar__auctions">

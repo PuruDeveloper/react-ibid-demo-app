@@ -47,9 +47,9 @@ a {
   columns: 2;
 }
 
-li p {
+/* li p {
   color: black;
-}
+} */
 
 .navbar__signin {
   margin-right: 0;

@@ -49,13 +49,13 @@
   height: 100%;
 }
 
-.home__auction__cars img {
+.home__auction__car img {
   width: 100%;
   margin: 3em 2px;
   border-radius: 20px;
 }
 
-.home__auction__cars img:hover {
+.home__auction__car img:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in;
 }

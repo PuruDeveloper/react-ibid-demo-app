@@ -1,26 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Auctions.css'
+import axios from 'axios';
 
 function Auctions() {
 
     const [product, setProduct] = useState([]);
-    
+
     useEffect(() => {
-        fetch("https://cis-automotive.p.rapidapi.com/getInactiveModels?brandName=Ford", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "220617dc7emsh077595e742124b4p19d1d2jsncf5e0e5d05eb",
-		"x-rapidapi-host": "cis-automotive.p.rapidapi.com"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
+        axios.get('https://jsonplaceholder.typicode.com/posts').then(response => {console.log(response)
+        setProduct(response.data)}).catch(error => { 
+            console.log(error)
+        })
     }, [])
-    
 
     return (
         <div className="auctions" >
@@ -29,7 +20,13 @@ function Auctions() {
                 <p> / </p>
                 <p>Shop</p>
             </div>
-            
+            <div className="auctions__middle" >
+                {
+                    product.length ? 
+                    product.map((product) => <div  key={product.id} ><h3>{product.title}</h3>
+                    <p>{product.body}</p></div> ) : null
+                }
+            </div>
         </div>
     )
 }
