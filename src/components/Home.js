@@ -1,10 +1,16 @@
 import React from 'react'
 import '../styles/Home.css'
 import HomeCarImage from '../images/home__car__image.jpg'
+import { Helmet } from 'react-helmet'
 
 function Home() {
     return (
         <div className="home" >
+        <div>
+    <Helmet>
+      <title>Home</title>
+    </Helmet>
+    </div>
             {/* <img src={HomeCarImage}  alt="home image car" ></img> */}
             <div className="home__heading" >
                 <p className="home__heading__1" >Find your dream car</p>

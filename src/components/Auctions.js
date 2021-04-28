@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Auctions.css'
 import axios from 'axios';
+import { Helmet } from 'react-helmet'
 
 function Auctions() {
 
@@ -15,6 +16,11 @@ function Auctions() {
 
     return (
         <div className="auctions" >
+            <div>
+    <Helmet>
+      <title>Auctions</title>
+    </Helmet>
+    </div>
             <div className="auctions__top" >
                 <p><a href="/" >Home</a></p>
                 <p> / </p>
